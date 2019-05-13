@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker { image 'ruby' } }
+    agent { docker { image 'php' } }
     stages {
         stage('build') {
             steps {
-                sh 'ruby --version'
+                sh 'php --version'
             }
         }
     }
